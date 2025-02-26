@@ -2,8 +2,6 @@
 <html lang="fr">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/styleMini.css">
 	<meta charset="UTF-8">
 	<!-- opengraph meta tag for social networks -->
 	<meta property="og:type=" content="website">
@@ -84,6 +82,8 @@
 			  ]
 			}
 	</script>
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/styleMini.css">
 </head>
 <body>
 <header class="top-header">
@@ -108,27 +108,27 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				
-				
-				<picture media="(min-width:475px)" srcset="./assets/images/slider/executive_320.webp"
-						media="(min-width:768px)" srcset="./assets/images/slider/executive_1024.webp" 
-						media="(min-width:1440px)" srcset="./assets/images/slider/executive_1920.webp">
-							 <img src="./assets/images/slider/executive_1920.webp"  class="d-block w-100" alt="Photo of an executive walking" width="100%" height="auto">
-				</picture>
+				<img src="./assets/images/slider/executive_1920.webp" 
+				 srcset="./assets/images/slider/executive_768.webp 768w,
+				         ./assets/images/slider/executive_1440.webp 1440w,
+						 ./assets/images/slider/executive_1920.webp 1920w"
+						 alt="Picture of an executive walking" class="d-block w-100" loading="lazy">
 			</div>
 			<div class="carousel-item">
-				<picture media="(min-width:475px)" srcset="./pics/concert_320"
-						media="(min-width:768px)" srcset="./pics/concert_1024"
-						media="(min-width:1440px)" srcset="./pics/concert_1920px">
-				<img src="./assets/images/slider/concert_1920.webp" class="d-block w-100" alt="Photo of people at a concert"  width="100%" height="auto">
-				</picture>
+			
+				<img src="./assets/images/slider/concert_1920.webp" class="d-block w-100"   
+				srcset="./assets/images/slider/concert_768.webp 768w,
+						./assets/images/slider/concert_1440.webp 1440w,
+						./assets/images/slider/concert_1920.webp 1990w"
+						alt="Photo of people at a concert" loading="lazy">
+				
 			</div>
 			<div class="carousel-item">
-				<picture media="(min-width:475px)" srcset="./pics/couple_320"
-						media="(min-width:768px)" srcset="./pics/couple_1024"
-						media="(min-width:1440px)" srcset="./pics/couple_1920px">
-				<img src="./assets/images/slider/couple_1920.webp" class="d-block w-100" alt="Photo of a groom and his bride kissing at their wedding"  width="100%" height="auto">
-				</picture>
+			<img src="./assets/images/slider/couple_1920.webp" class="d-block w-100"
+			srcset="./assets/images/slider/couple_768.webp 768w,
+			./assets/images/slider/couple_1440.webp 1440w,
+			./assets/images/slider/couple_1920.webp 1920w"
+			alt="Photo of a groom and his bride kissing at their wedding" loading="lazy">	
 			</div>	
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -150,7 +150,7 @@
 	</div>
 	<article id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
-		<h6 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h6>
+		<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
 		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</article>
@@ -159,17 +159,26 @@
 	<h2 class="title">Portfolio</h2>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.avif" alt="photo of a concert from the audience"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.avif" alt="photo on an executive in a business attire"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.avif" alt="photo of two women in an office"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.avif" alt="picture of a couple's hands in a wedding"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.avif" alt="portrait of a man with his eyes closed"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.avif" alt="picture of a groom and his bride laughing"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.avif" alt="picture of a young woman standig behind a barrier"/>
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.avif" alt="picture of a singer at a concert"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.avif" alt="picture of young woman in her office"/>
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.avif" height="400px" width="auto" alt="photo of a concert from the audience"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.avif" height="400px" width="auto" alt="photo on an executive in a business attire"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.avif" height="400px" width="auto" alt="photo of two women in an office"/>
+			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.avif" height="400px" width="auto" alt="picture of a couple's hands in a wedding"/>
+			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.avif" height="400px" width="auto" alt="portrait of a man with his eyes closed"/>
+			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.avif" height="400px" width="auto" alt="picture of a groom and his bride laughing"/>
+			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.avif" height="400px" width="auto" alt="picture of a young woman standig behind a barrier"/>
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.avif" height="400px" width="auto" alt="picture of a singer at a concert"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.avif" height="400px" width="auto" alt="picture of young woman in her office"/>
 		</div>
+		
+
+		</div>
+		<dialog id="lightbox" style="height: 800px; width:600px; overflow: hidden; border: 4px solid #fff;">
+			<img src="" class="image-modal" alt="image in the modal" height="100%" width="100%" style="object-fit: cover; object-position: center; padding: 5px;">
+			<button type="button" class="mg-next" style="position:absolute; top: 50%; right:0;" onclick="showSlides(1)">></button>
+			<button type="button" class="mg-prev" style="position:absolute; top: 50%; left:0;" onclick="showSlides(-1)"><</button>
+		</dialog>
 	</div>
+
 	<div class="quote">
 		<figure>
 			<blockquote>
@@ -245,7 +254,9 @@
 </footer>
 <script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" ></script>
-<script src="./assets/maugalleryMini.js" defer></script>
+<!-- <script src="./assets/maugalleryMini.js" defer></script> -->
+ <script src="./assets/maugallery.js" defer></script>
 <script src="./assets/scripts.js" defer></script>
+<script src="./assets/gallery.js" defer></script>
 </body>
 </html>

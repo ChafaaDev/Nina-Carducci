@@ -82,6 +82,8 @@
 	</script>
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/styleMini.css">
+	<script src="./assets/maugallery.mini.js" async></script>
+	<script src="./assets/script.mini.js" async></script>
 </head>
 <body>
 <header class="top-header">
@@ -92,7 +94,7 @@
 			<li><a href="#gallery">Galerie</a></li>
 			<li><a href="#services">Service</a></li>
 			<li><a href="#contact">Contact</a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.webp" alt="logo instagram"></a></li>
+			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="./assets/images/instagram.webp" alt="logo instagram" loading="eager"></a></li>
 		</ul>
 	</nav>
 </header>
@@ -110,7 +112,7 @@
 					srcset="./assets/images/slider/executive_768.webp 768w,
 							./assets/images/slider/executive_1440.webp 1440w,
 							./assets/images/slider/executive_1920.webp 1920w"
-							alt="Picture of an executive walking" class="d-block w-100" loading="lazy">
+							alt="Picture of an executive walking" class="d-block w-100" loading="eager">
 				</div>
 				<div class="carousel-item">
 				
@@ -118,7 +120,7 @@
 					srcset="./assets/images/slider/concert_768.webp 768w,
 							./assets/images/slider/concert_1440.webp 1440w,
 							./assets/images/slider/concert_1920.webp 1990w"
-							alt="Photo of people at a concert" loading="lazy">
+							alt="Photo of people at a concert" loading="eager">
 					
 				</div>
 				<div class="carousel-item">
@@ -126,7 +128,7 @@
 				srcset="./assets/images/slider/couple_768.webp 768w,
 				./assets/images/slider/couple_1440.webp 1440w,
 				./assets/images/slider/couple_1920.webp 1920w"
-				alt="Photo of a groom and his bride kissing at their wedding" loading="lazy">	
+				alt="Photo of a groom and his bride kissing at their wedding" loading="eager">	
 				</div>	
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -154,15 +156,15 @@
 		<h2 class="title">Portfolio</h2>
 		<div class="container py-3">
 			<div class="gallery" style="display: none">
-				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.avif" height="400" width="auto" alt="photo of a concert from the audience"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.avif" height="400" width="auto" alt="photo on an executive in a business attire"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.avif" height="400" width="auto" alt="photo of two women in an office"/>
-				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.avif" height="400" width="auto" alt="picture of a couple's hands in a wedding"/>
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.avif" height="400" width="auto" alt="portrait of a man with his eyes closed"/>
-				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.avif" height="400" width="auto" alt="picture of a groom and his bride laughing"/>
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.avif" height="400px" width="auto" alt="picture of a young woman standig behind a barrier"/>
-				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.avif" height="400" width="auto" alt="picture of a singer at a concert"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.avif" height="400" width="auto" alt="picture of young woman in her office"/>
+				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.avif" height="400" width="auto" alt="photo of a concert from the audience" loading="eager"/>
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.avif" height="400" width="auto" alt="photo on an executive in a business attire" loading="eager"/>
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.avif" height="400" width="auto" alt="photo of two women in an office" loading="eager"/>
+				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.avif" height="400" width="auto" alt="picture of a couple's hands in a wedding" loading="eager"/>
+				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.avif" height="400" width="auto" alt="portrait of a man with his eyes closed" loading="eager"/>
+				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.avif" height="400" width="auto" alt="picture of a groom and his bride laughing" loading="eager"/>
+				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.avif" height="400px" width="auto" alt="picture of a young woman standig behind a barrier" loading="eager"/>
+				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.avif" height="400" width="auto" alt="picture of a singer at a concert" loading="eager"/>
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.avif" height="400" width="auto" alt="picture of young woman in her office" loading="eager"/>
 			</div>
 			</div>
 			<dialog id="lightbox">
@@ -248,8 +250,6 @@
 </footer>
 <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" ></script>
- <script src="./assets/maugallery.mini.js" defer></script>
-<script src="./assets/script.mini.js" defer></script>
 <script src="./assets/gallery.js" defer></script>
 </body>
 </html>

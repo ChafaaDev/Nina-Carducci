@@ -6,4 +6,3 @@ imageModal.src=e.target.src}});let slideIndex=0;function showSlides(index){slide
 if(slideIndex<0){slideIndex=slides.length-1}
 imageModal.src=slides[slideIndex].src}
 lightbox.addEventListener("click",(e)=>{if(e.target===lightbox){lightbox.close()}})
-
